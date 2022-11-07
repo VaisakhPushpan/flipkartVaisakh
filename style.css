@@ -1,0 +1,522 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: #2874f0;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+body{
+    background-color: #f1f3f6;;
+}
+.logo-img{
+    width: 75px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    line-height: 8px;
+    padding-top: 10px;
+    position: relative;
+    left: 200px;
+}
+.logo-txt{
+    text-decoration: none;
+    color: white;
+}
+.search-box{
+    position: relative;
+    left: 210px;
+    top: 9px;
+}
+.search-box input{
+    width: 565px;
+    height: 38px;
+    border-radius: 3px solid white;
+    padding-left: 13px;
+    font-size: 15px;
+}
+svg{
+    position: absolute;
+    left:530px;
+    top: 9px;
+}
+.nav-login-btn{
+    position: relative;
+    left: 255px;
+    top: 10px;
+}
+.nav-login-btn ul{
+    list-style: none;
+    line-height: 50px;
+}
+.nav-login-btn ul li{
+    font-size: 14px;
+    font-weight: 450;
+}
+.nav-login-btn ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-login-btn button{
+    width: 125px;
+    height: 32px;
+    border: none;
+    color: #2874f0;
+    font-weight: 500;
+}
+.list{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    top: 15px;
+}
+.cart{
+    position: relative;
+    left: 385px;
+    top: 15px;
+}
+.cart i{
+    font-size: 20px;
+    color: white;
+}
+.cart a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.link-hover:hover{
+    color: white;
+}
+.dropdown-more{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+    right: -120px;
+    top: 57px;
+    color: black;
+    line-height: 50px;
+    box-shadow: 0 0 5px grey;
+    display: none;
+}
+.dropdown-more ul li{
+    list-style: none;
+    border-bottom: 1px  black;
+}
+.now-show{
+    display: none;
+}
+.menu-bar{
+    display: none;
+    position: absolute;
+    left: 0px;
+    font-size: 20px;
+}
+#list-menu{
+    position: fixed;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    z-index: 2;
+    background-color: white;
+    left: -10000px;
+    transition: all .5s ease;
+    
+}
+.top-bar{
+    width: 100%;
+    height: 56px;
+    background-color: #2874f0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.menu-list ul li{
+    list-style: none;
+    line-height: 30px;
+    font-weight: 450;
+    font-size: 15px;
+    
+}
+.menu-list ul li img{
+    width: 15px;
+}
+.lite{
+    font-size: 10px;
+    position: relative; 
+    bottom: 40%; 
+    display: none;
+    
+}
+
+/* login-page */
+
+.container-login{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 10;
+    display: flex; 
+    justify-content: center;   
+    align-items: center; 
+    display: none;
+}
+.main-login{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    border-radius: 25px;
+}
+.login-1{
+    background-color: #2874f0;
+    width: 40%;
+    height: 100%;
+    background-image: url(https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/login_img_c4a81e.png);
+    background-repeat: no-repeat;
+    background-position: center 85%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 0px 30px;
+}
+.login-2{
+    background-color: #fff;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.login-form{
+    width: 100%;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    gap : 50px;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.login-form form input{
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+}
+.input-group{
+    position: relative;   
+}
+.input-group label{
+    transition: all .2s ease-in-out;
+    color: grey;
+}
+
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label{
+    bottom: 25px;
+    font-size: 14px;
+    color: grey;
+}
+.input-group input:valid ~ label span{
+    display: none;
+}
+.sectionresponsive-1{
+    display: none;
+}
+
+
+@media(max-width : 1375px){
+    .main-1{
+        display: none;
+    }
+    .section-1{
+        display: none;
+    }
+    .section-1-child a img{
+        width: 60px;
+    }
+    nav{
+        width: 100%;    
+        height: 110px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        line-height: 8px;
+        padding-top: 10px;
+        position: relative;
+        left: 8%;
+    }
+    .search-box{
+        position: absolute;
+        left: 5%;
+        top: 60px;
+        width: 100%;
+    }
+    .search-box input{
+        width: 90%;
+    }
+    .search-box input:focus{
+        outline: none;
+    }
+    .lenze{
+        display: none;
+    }
+    .cart,.nav-login-btn,.link-hoverr{
+        display: none;
+    }
+    .now-show{
+        display: block;
+        top: 10px;
+    }
+    .now-show img,i,a{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .menu-bar{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+    .menu-bar i{
+        position: relative;
+        left: 0;
+    }
+    .lite{
+        display: inline-block;
+    }
+    .slide-none{
+        display: none;
+    }
+    .sectionresponsive-1{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 110px;
+    }
+    .first{
+        display: flex;
+        overflow: scroll;
+        text-align: center;
+        height: 150px;
+    }
+    .first a img{
+        width: 80px;
+        margin-top: 30px;
+    }
+    .first a{
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        font-weight: 500;
+
+    }
+    .sectionresponsive-2{
+        position: relative;
+        top: 110px;
+    }
+    .sectionresponsive-3{
+        position: relative;
+        top: 110px;
+    }
+    .sectionresponsive-4{
+        display: flex;
+        position: relative;
+        top: 110px;
+        background-image: url(https://rukminim1.flixcart.com/flap/1400/350/image/6fb55d6649c2933e.jpg?q=90);
+        width: 100%;
+        height: 110px;
+        background-size: 100%;
+    }
+    .sectionresponsive-5{
+        position: relative;
+        top: 110px;
+        background : linear-gradient(#ffd0c7, #ffd0c7);
+        box-shadow: 0 0 2px grey;
+    }
+    .sectionresponsive-6{
+        position: relative;
+        top: 110px;
+        box-shadow: 0 0 2px grey;
+    }
+    .sectionresponsive-7{
+        position: relative;
+        top: 110px;
+        box-shadow: 0 0 2px grey;
+    }
+    .responsive-footer{
+        position: relative;
+        top: 110px;
+    }
+    .responsive-loginpage{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background-color: #f1f3f6;
+        z-index: 11;
+        display: none;
+    }
+    .login-main input:focus{
+        outline: none;
+    }
+}
+
+
+/* section-1 start here */
+.section-1{
+    position: relative;
+    top: 70px;
+}
+.slide-main{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 90%;
+    position: relative;
+    left: 60px;
+}
+.section-1-child {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1000px;
+}
+.section-1-child img{
+    width: 64px;
+    height: 64px;
+}
+.section-1-child a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+
+/* section-2 */
+
+.section-2{
+    height: 300px;
+    position: relative;
+    top: 80px;
+    box-shadow: 0 0 10px grey;
+    padding-top: 10px;
+    
+}
+
+
+/* section-3 */
+
+.section-3{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+.section-3url{
+    text-align: center;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/7593e7b6640822c1.jpg?q=90&quot);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 350px;
+    padding-top: 80px;
+}
+.section-3-carosal{
+    width: 65%;
+    height: 350px;
+}
+
+
+
+/* section-4 */
+
+
+.section-4{
+    display: flex;
+    margin-top: 110px;
+    box-shadow: 0 0 5px grey;
+
+}
+.section4-1{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/59d58e5ce057f2e6.jpg?q=90&quot);
+    background-position: bottom;
+    background-size: 100%;
+    width: 220px;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.img-hover:hover{
+   transform: scale(1.05);
+}
+
+/* 
+section-7 */
+
+.section7-1{
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/31d46a8fd93eeedd.jpg?q=90&quot);
+    background-position: bottom;
+    background-size: 100%;
+    width: 220px;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* description-1 */
+
+.description-1{
+    box-shadow: 0 0 1px grey;
+    width: 100%;
+    height: 5000px;
+    margin-top: 50px;
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #172337;
+}
+.roww{
+    background-color: #172337;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-ul{
+    list-style: none;
+}
+.footer-ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
