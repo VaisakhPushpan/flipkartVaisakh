@@ -25,6 +25,7 @@ body{
     padding-top: 10px;
     position: relative;
     left: 200px;
+
 }
 .logo-txt{
     text-decoration: none;
@@ -290,6 +291,8 @@ svg{
         position: absolute;
         left: 0;
         top: 10px;
+        background-color: #2874f0;
+        border: none;
     }
     .menu-bar i{
         position: relative;

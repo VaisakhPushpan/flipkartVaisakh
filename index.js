@@ -61,8 +61,8 @@ document.querySelector("#responsive-loginbtn").addEventListener("click" , ()=>{
 document.querySelector("#resonsive-logindissmiss").addEventListener("click" , ()=>{
     document.querySelector(".responsive-loginpage").style.display = "none";
 })
-document.querySelector("#continue-input").addEventListener("change" , (numberr)=>{
-     let number = numberr.currentTarget.value;
+document.querySelector("#continue-input").addEventListener("keypress" , (numberr)=>{
+     let number = document.querySelector("#continue-input").value + parseInt(numberr.key);
      if(number.length === 10){
         document.querySelector("#continue-btn").style.background = "orange";
      }
